@@ -37,21 +37,21 @@ class MainActivity : AppCompatActivity() {
         btnSubtract.setOnClickListener {
 
             var res1 = etNumber1.text.toString().toInt()
-            var res2 = etNumber1.text.toString().toInt()
+            var res2 = etNumber2.text.toString().toInt()
 
             Subtract(res1, res2)
         }
         btnMultiply.setOnClickListener {
 
             var res1 = etNumber1.text.toString().toInt()
-            var res2 = etNumber1.text.toString().toInt()
+            var res2 = etNumber2.text.toString().toInt()
 
             Multiply(res1, res2)
         }
         btnModulus.setOnClickListener {
 
             var res1 = etNumber1.text.toString().toInt()
-            var res2 = etNumber1.text.toString().toInt()
+            var res2 = etNumber2.text.toString().toInt()
 
             Modulus(res1, res2)
 
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun add(res1:Int,res2:Int){
-        var res=res1 + res2
+        var res=res1+res2
         tvResult.text=res.toString()
     }
 
